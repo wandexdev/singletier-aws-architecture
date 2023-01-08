@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# protect personal credentials from public
+hostname=$(hostnamectl)
+ip=$()
+domain name=$()
