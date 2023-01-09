@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# protect personal credentials from public
+hostname=$(hostnamectl)
+ip=$()
+domain name=$()
+
+
+## Set the environment variables in a separate script
+#echo 'export API_USERNAME="my_username"' > setenv.sh
+#echo 'export API_PASSWORD="my_password"' >> setenv.sh
+
+## Source the script to set the environment variables
+#source setenv.sh
+
+## Run the bash script
+#./bash_script.sh
