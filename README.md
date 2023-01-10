@@ -5,8 +5,8 @@
 Creating and configuring an elastic, highly available single tier AWS Architecture
 
 ## Access links:
-domain name: [wandexdev.me](https://wandexdev.me)
-ALB's domain: wandealtschool-ALB-427409128.us-east-1.elb.amazonaws.com
+* domain name: [wandexdev.me](https://wandexdev.me)
+* ALB's domain:[ALB's domain dns](wandealtschool-ALB-427409128.us-east-1.elb.amazonaws.com)
 
 ## Architecture Essentials (Network and Servers):
 * 1 Virtual Private Cloud[VPC] (Regional so one needed)
