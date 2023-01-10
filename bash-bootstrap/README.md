@@ -1,9 +1,9 @@
 # BASH SCRIPT AS EC2 USER DATA: [link](https://github.com/wandexdev/singletier-aws-architecture/blob/main/bash-bootstrap/ec2_userdatascript.sh)
 It outputs the page served via NGINX from both private ec2 instances passed through the application load balancer.
-![EC2 User data used](ec2script.png)
+![EC2 User data used](ssl-domainname.png)
 
 ---
-## A
+## A (FAILED)
 	* This bash script intalls, builds and deploys a Python_Flask app with all dependies needed to run efficiently.
 	* It also installs and configures NGINX to serve the app.
 	* The simple python_Flask app diplays hosname and ip address of the server its listening to.
@@ -22,4 +22,5 @@ As painfully as I finally admit this, I couldnt use this script to automatically
 ![html user data](htmluserdata.png)
 
 ### Limitation:
-Well it failed to show the hostname as it kept returning the `$(Hostname -f) as a normal string.
+Well it failed to show the hostname as it kept returning the `$(Hostname -f) as a normal string. Im assuming the html formatting made it this way. 
+....... I'll definately do more research
