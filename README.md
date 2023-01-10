@@ -6,6 +6,7 @@ Creating and configuring an elastic, highly available single tier AWS Architectu
 
 ## Architecture Essentials (Network and Servers):
 * 1 Virtual Private Cloud[VPC] (Regional so one needed)
+* Internet gateway[IG] (grant internet access to the vpc)
 * Subnets
 	* 4 Subnets (2 pubic, 2 Private in 2 availability zones)
 * Launch Configuration[LC]
