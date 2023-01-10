@@ -1,6 +1,10 @@
 # BASH SCRIPT AS EC2 USER DATA: [link](https://github.com/wandexdev/singletier-aws-architecture/blob/main/bash-bootstrap/ec2_userdatascript.sh)
 It outputs the page served via NGINX from both private ec2 instances passed through the application load balancer.
 ![EC2 User data used](ssl-domainname.png)
+* NO Manual terminal configuration done
+* No ssh via external host needed for more security. 
+* Instances were configured to full servers as soon as they were launched
+* Auto Scaling Group automatically created the amount of servers needed via launch templates.
 
 ---
 ## A (FAILED)
