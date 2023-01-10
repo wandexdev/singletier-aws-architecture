@@ -1,8 +1,12 @@
 ## Architecture Diagram:
-![]()
+![diagram](awsarchitecture.jpg)
 
 ## Description:
 Creating and configuring an elastic, highly available single tier AWS Architecture
+
+## Access links:
+	* domain name: wandexdev.me
+	* ALB's domain: wandealtschool-ALB-427409128.us-east-1.elb.amazonaws.com
 
 ## Architecture Essentials (Network and Servers):
 * 1 Virtual Private Cloud[VPC] (Regional so one needed)
@@ -10,6 +14,7 @@ Creating and configuring an elastic, highly available single tier AWS Architectu
 * Subnets
 	* 4 Subnets (2 pubic, 2 Private in 2 availability zones)
 * Launch Configuration[LC]
+	* Include userdata bash script.
 * Autoscaling group[ASG]
 	* Select LC aleady created
 * Target group for the instances
@@ -17,6 +22,7 @@ Creating and configuring an elastic, highly available single tier AWS Architectu
 	* Associate already created Target group
 * Instances with no assigned Public Ipv4, just normal Private ones.
 * Network Address Translator[NAT] Gateway or Instance (Provides 1 public IPv4 for all Private instances in order to allow internet requests flow to them)
+	* allocate the public elastic ip
 * Route Tables
 	* create, adjust routes and associate with the subnets
 * Security Groups[SG]

@@ -1,5 +1,8 @@
-# BASH SCRIPT AS EC2 USER DATA
+# BASH SCRIPT AS EC2 USER DATA: [link](https://github.com/wandexdev/singletier-aws-architecture/blob/main/bash-bootstrap/ec2_userdatascript.sh)
+It outputs the page served via NGINX from both private ec2 instances passed through the application load balancer.
+![EC2 User data used](ec2script.png)
 
+---
 ## A
 	* This bash script intalls, builds and deploys a Python_Flask app with all dependies needed to run efficiently.
 	* It also installs and configures NGINX to serve the app.
