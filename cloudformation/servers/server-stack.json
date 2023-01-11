@@ -78,10 +78,10 @@
             "Properties": {
                 "UserData": {
                     "Fn::Base64": {
-                        "Fn::Sub": "#!/bin/bash\nsudo apt-get update -y\nsudo apt-get install nginx -y\nsudo apt install net-tools -y\nsudo systemctl start nginx.service\nsudo systemctl enable nginx.service\nhost=$(hostname)\nip=$(ifconfig | grep 'inet ' | grep -v '127.0.0.1' | cut -c 7-17)\nsudo chown -R $USER:$USER /var/www\necho 'Host name / IP address for this server is '$host'' > /var/www/html/index.nginx-debian.html            \n"
+                        "Fn::Sub": "#!/bin/bash\n# Update repository and install nginx\nsudo apt update -y\nsudo apt upgrade -y\nsudo apt install nginx -y\n#set time and hostname\ntimedatectl set-timzone Africa/Lagos\nhostname=$(hostname)\ndate=$(date)\n# set permission\nsudo chown -R $USER:$USER /var/www\n#redirect to nginx conf\necho "<h1>I'm popularly called $hostname a.k.a the host</h1>" > /var/www/html/index.nginx-debian.html\necho "<h2>Your'e viewing this today: $date</h2>" >> /var/www/html/index.nginx-debian.html\necho "<h2>     Built by Raji Risikat Yewande</h2>" >> /var/www/html/index.nginx-debian.html\n#start nginx\nsudo systemctl restart nginx\nsudo systemctl reload nginx\n"
                     }
                 },
-                "ImageId": "ami-0574da719dca65348",
+                "ImageId": "ami-0b93ce03dcbcb10f6",
                 "KeyName": "altkey",
                 "SecurityGroups": [
                     {

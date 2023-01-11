@@ -2,5 +2,13 @@
   {
     "ParameterKey": "EnvironmentName",
     "ParameterValue": "wandealtschool"
+  },
+  {
+    "ParameterKey": "WebAppInstanceImageAMI",
+    "ParameterValue": "ami-0b93ce03dcbcb10f6"
+  },
+  {
+    "ParameterKey": "WebAppInstanceType",
+    "ParameterValue": "t2.micro"
   }
 ]
