@@ -46,10 +46,12 @@ PICTURE PROOF OF AWS INFRASTRUCTURE AS MENTIONED BY TUTOR KUNRAD FROM LIVE CLASS
 * Private Instances:
 ![instances](/images/privateinstances.png)
 * Launch Template:
-![LT](launchtemplate.png)
+![LT](/images/launchtemplate.png)
 * AutoScaling Group:
-![ASG](ASG.png)
+![ASG](/images/ASG.png)
 * Application Load Balancer:
-![ALB](ALB.png)
+![ALB](/images/ALB.png)
 * Target Group:
-![TG](TG.png)
+![TG](/images/TG.png)
+* Route 53 mangaging my custom domain name linked with ALB's DNS:
+![R53](/images/R53.png)
