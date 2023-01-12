@@ -36,3 +36,20 @@ Creating and configuring an elastic, highly available single tier AWS Architectu
 	* Hosted zone
 	* Certificate Manager
 * Primary Domain Provider's DNS
+
+---
+PICTURE PROOF OF AWS INFRASTRUCTURE AS MENTIONED BY TUTOR KUNRAD FROM LIVE CLASS
+* Personal VPC:
+![VPC](/images/VPC.png)
+*  Subnets:
+![subnets](/images/subnets.png)
+* Private Instances:
+![instances](/images/privateinstances.png)
+* Launch Template:
+![LT](launchtemplate.png)
+* AutoScaling Group:
+![ASG](ASG.png)
+* Application Load Balancer:
+![ALB](ALB.png)
+* Target Group:
+![TG](TG.png)
