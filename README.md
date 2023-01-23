@@ -1,5 +1,6 @@
 ## Architecture Diagram:
 ![diagram](awsarchitecture.jpg)
+![diagram](awsarcheture.png)
 
 ## Description:
 Creating and configuring an elastic, highly available single tier AWS Architecture

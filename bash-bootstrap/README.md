@@ -14,8 +14,8 @@ This script outputs both pages served via NGINX from both private ec2 instances 
 ## Option B:[link](https://github.com/wandexdev/singletier-aws-architecture/blob/main/bash-bootstrap/flask_userdata.sh)
 This bash script intalls, builds and deploys a Python_Flask app with all dependies(python3, venv, pip, uwsgi etc) needed to run efficiently.
 ![wandexdev sample](python-flask.png)
-	* It also installs and configures NGINX to serve the app.
-	* The simple python_Flask app diplays hosname and ip address of the server its listening to.
+* It also installs and configures NGINX to serve the app.
+* The simple python_Flask app diplays hosname and ip address of the server its listening to.
 ### Limitation:
 I couldnt use this script to automatically create instnaces in my private subnets. It worked perfectly for public instances because of their public IPv4 addresses which the private ones do not have.
 ......Ill definetely do more research.
